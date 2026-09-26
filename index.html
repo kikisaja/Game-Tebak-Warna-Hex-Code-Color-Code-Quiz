@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Warna Hex Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="container">
+        <header>
+            <h1>Hex Code Guessing Game</h1>
+            <p>Tebak kode warna Hex (#RRGGBB) yang sesuai dengan kotak warna di bawah ini!</p>
+        </header>
+
+        <div class="game-card">
+            <!-- Papan Skor -->
+            <div class="score-board">
+                <div class="score-item">Skor: <strong id="score">0</strong></div>
+                <div class="score-item">Rekor Terbaik: <strong id="highScore">0</strong></div>
+            </div>
+
+            <!-- Area Pratinjau Warna Target -->
+            <div id="colorDisplay" class="color-box"></div>
+
+            <!-- Pesan Umpan Balik -->
+            <div id="message" class="message">Pilih salah satu kode warna di bawah!</div>
+
+            <!-- Pilihan Jawaban -->
+            <div class="options-grid" id="optionsContainer">
+                <!-- Pilihan tombol akan di-generate otomatis oleh JavaScript -->
+            </div>
+
+            <!-- Tombol Aksi -->
+            <div class="control-section">
+                <button id="btnReset" class="btn btn-primary">Mainkan Warna Baru</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
